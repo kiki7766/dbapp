@@ -67,5 +67,9 @@ _Payment_ will be the one in charge of verifiying the payment and all.
 Finally, _wishlist_ is the one the product will be watching or "add" to the wishlist that the customer wanted to only see and not buy.
 
 
+************************************************************
+
+### Hope You Like it. Thanks! 
+
 
 
