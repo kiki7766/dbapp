@@ -58,7 +58,7 @@ The CustomerAcc is for the customer let know the developer that one account is c
 
 _Stock_ is the one that needs to be filled with the suppliers with products, have notification stock to let know the customer that the product is back or will be soon in stock and also needs to have a price.
 
-_Suppliers_is the one that is in charge of providing the merchandise of all the Game online market place. 
+_Suppliers_ is the one that is in charge of providing the merchandise of all the Game online market place. 
 
 _Webapp and MobApp_ are the one that have the customer service access to buy the products and stuff. 
 
