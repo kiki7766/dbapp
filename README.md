@@ -9,3 +9,4 @@ This is a somewhat part of a class that Im trying to to so be pacient and hope e
 
 Hello there :)
 
+This project is about the class of Database, I create a E-commerce project
