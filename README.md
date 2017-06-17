@@ -51,7 +51,21 @@ Accounts is a weak entity which include attributes Login (can be connected with 
 
 # In the SQL file
 
-_The Table of Developers_ has 10 CustomerAcc that means each developer is assign to a max of 10000 of customers accounts. 
+_The Table for Accounts_ has the controlof login as the primary key, also responsable for the cart, setting and notifications to reach for the customer.
+
+_The Table of Developers_ has 10 CustomerAcc that means each developer is assign to a max of 10000 of customers accounts. The developersalso has the accmanage which is the one that can resolve each and every problems that all the customers with the accounts but only minor and technical issues. 
+The CustomerAcc is for the customer let know the developer that one account is close or need to be fix and this is the attribute responsible for the job.
+
+_Stock_ is the one that needs to be filled with the suppliers with products, have notification stock to let know the customer that the product is back or will be soon in stock and also needs to have a price.
+
+_Suppliers_is the one that is in charge of providing the merchandise of all the Game online market place. 
+
+_Webapp and MobApp_ are the one that have the customer service access to buy the products and stuff. 
+
+_Payment_ will be the one in charge of verifiying the payment and all.
+
+Finally, _wishlist_ is the one the product will be watching or "add" to the wishlist that the customer wanted to only see and not buy.
+
 
 
 
