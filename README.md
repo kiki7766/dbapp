@@ -45,3 +45,13 @@ Added in each entities new attributes.
 Accounts is a weak entity which include attributes Login (can be connected with Facebook, G+ or email), Cart (products to buy), Setting (to control the account), Notification (necessary to let the customer about updates, promotions, and any other important information) which will have a weak relationship with a weak entity of Customers with attributes of interested products and Account access (login) because the Accounts depends on Customers and Developers. Now Developers are a strong entity which controls all, having attributes as Account management, Customer Support, Web and Mobile management, also in charge of the Stock, Supplier, and Payment issues. Stock is another weak entity with attributes of products, Category, Stock Notification and Price having a relationship with Supplier as a strong entity with attributes of Product Supplier, Categorize products and Price. WebApp and MobApp are connected with the Accounts, Stock and Developers with an All-In-All Access. 
 
 **Note:** All-In-All Access relationship is the one that unites all the controls of all of the other entities. I mean, since Mobile and Web application needs to be connected with all other entities the best way is to be connected directly with the Developer so that can have access to all others entities.
+
+
+
+
+# In the SQL file
+
+_The Table of Developers_ has 10 CustomerAcc that means each developer is assign to a max of 10000 of customers accounts. 
+
+
+

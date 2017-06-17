@@ -64,7 +64,8 @@ INSERT INTO Wishlist(interestprod, acclog) Values ('KH-10', 'marina');
 INSERT INTO Wishlist(interestprod, acclog) Values ('Mario Cart', 'Bobby');
 INSERT INTO Wishlist(interestprod, acclog) Values ('Just Dance 2024', 'dancer101');
 INSERT INTO Wishlist(interestprod, acclog) Values ('controller for PS4', 'poli');
-
+INSERT INTO Wishlist(interestprod, acclog) Values ('HellBoy', 'tsk');
+INSERT INTO Wishlist(interestprod, acclog) Values ('2024', 'hamburger');
 
 -----------------RANDOM INSERT,ALTER, UPDATE, DROP, DELETE--------------
 
