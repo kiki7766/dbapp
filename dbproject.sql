@@ -14,7 +14,7 @@
 
 CREATE TABLE Accounts(login VARCHAR(25) PRIMARY KEY, cart INT, Setting VARCHAR(30), Notifications VARCHAR(20));
 
-CREATE TABLE Developers(AccManage VARCHAR(100) PRIMARY KEY,  WebMobManage VARCHAR(500), StockSupplierPayIssues VARCHAR(500));
+CREATE TABLE Developers(AccManage VARCHAR(100) PRIMARY KEY,CustomerAcc1 VARCHAR (100), CustomerAcc2 VARCHAR(100), CustomerAcc3 VARCHAR(100), CustomerAcc4 VARCHAR(100), CustomerAcc5 VARCHAR(100), CustomerAcc6 VARCHAR (100), CustomerAcc7 VARCHAR (100), CustomerAcc8 VARCHAR(100), CustomerAcc9 VARCHAR(100), CustomerAcc10 VARCHAR(100), WebMobManage VARCHAR(500), StockSupplierPayIssues VARCHAR(500));
 
 CREATE TABLE Stock(Product VARCHAR(25), StockNotification VARCHAR(30), Price float PRIMARY KEY);   
 
@@ -26,7 +26,7 @@ CREATE TABLE MobApp(AccountLog VARCHAR(15) PRIMARY KEY ,Plataform VARCHAR(10),Pr
 
 CREATE TABLE Payment(VerifyPurchase VARCHAR(25), NotificationPayment VARCHAR(15) PRIMARY KEY);
 
-CREATE TABLE Customers(InterestProd VARCHAR(25), AccLog VARCHAR(15) PRIMARY KEY);
+CREATE TABLE Wishlist(InterestProd VARCHAR(25), AccLog VARCHAR(15) PRIMARY KEY);
 /*
 ***************************INSERT IN ACCOUNTS*************************
 */
@@ -50,25 +50,26 @@ INSERT INTO Accounts(login, cart, Setting, Notifications) Values ('tsk', 6, 'Upd
 INSERT INTO Accounts(login, cart, Setting, Notifications) Values ('ham', 1, 'Suggestions', 0);
 
 
+INSERT INTO Accounts(login, cart, Setting, Notifications) Values ('hero', 6, 'Update Profile', 2);
 
-##------------------At least insert 8 in customer-------------------##
-INSERT INTO customers(interestprod, acclog) Values ('VR-Glasses', 'kiki');
-INSERT INTO customers(interestprod, acclog) Values ('PS4', 'pan');
-INSERT INTO customers(interestprod, acclog) Values ('Xbox One', 'deathside');
-INSERT INTO customers(interestprod, acclog) Values ('GTA9', 'greatfriend');
-INSERT INTO customers(interestprod, acclog) Values ('KH-10', 'marina');
-INSERT INTO customers(interestprod, acclog) Values ('Mario Cart', 'Bobby');
-INSERT INTO customers(interestprod, acclog) Values ('Just Dance 2024', 'dancer101');
-INSERT INTO customers(interestprod, acclog) Values ('controller for PS4', 'poli');
+INSERT INTO Accounts(login, cart, Setting, Notifications) Values ('hamburger', 0, 'Settings', 10);
 
 
-
+##------------------At least insert 10 in customer-------------------##
+INSERT INTO Wishlist(interestprod, acclog) Values ('VR-Glasses', 'kiki');
+INSERT INTO Wishlist(interestprod, acclog) Values ('PS4', 'pan');
+INSERT INTO Wishlist(interestprod, acclog) Values ('Xbox One', 'deathside');
+INSERT INTO Wishlist(interestprod, acclog) Values ('GTA9', 'greatfriend');
+INSERT INTO Wishlist(interestprod, acclog) Values ('KH-10', 'marina');
+INSERT INTO Wishlist(interestprod, acclog) Values ('Mario Cart', 'Bobby');
+INSERT INTO Wishlist(interestprod, acclog) Values ('Just Dance 2024', 'dancer101');
+INSERT INTO Wishlist(interestprod, acclog) Values ('controller for PS4', 'poli');
 
 
 -----------------RANDOM INSERT,ALTER, UPDATE, DROP, DELETE--------------
 
 
-INSERT INTO Developers (accmanage, webmobmanage, StockSupplierPayIssues) Values ('all access system', 'bug fixes', 'Product and Stock');
+INSERT INTO Developers (accmanage, CustomerAcc1, CustomerAcc2, CustomerAcc3, CustomerAcc4, CustomerAcc5, CustomerAcc6, CustomerAcc7, CustomerAcc8, CustomerAcc9, CustomerAcc10, webmobmanage, StockSupplierPayIssues) Values ('all access system','awfull','kiki','wehapom','mercury101','deathside','hamburger','tsk','marina','poli','Bobby', 'bug fixes', 'Product and Stock');
 
 INSERT INTO MobApp(AccountLog, ProductView, NotificationPurchase, ProdShipTime, Price) VALUES('awfull','Consoles','Confirmation Pay', '2017-01-01',10);
 
@@ -96,15 +97,15 @@ UPDATE Accounts SET subscribe = 'niconicoli@pikachu.io' where login = 'wehapom';
 
 SELECT * FROM Accounts;
 
-SELECT * FROM Accounts WHERE cart < 4;
+SELECT * FROM Accounts WHERE cart < 7;
 
-SELECT interestprod FROM Customers WHERE acclog = 'kiki';
+SELECT interestprod FROM Wishlist WHERE acclog = 'kiki';
 
 SELECT DISTINCT acclog FROM Accounts WHERE Setting = 'Update Profile';
 
 --------------------Le index-----------------------------------------
 
-CREATE INDEX index_head ON Developers (AccManage, WebMobManage, StockSupplierPayIssues);
+CREATE INDEX index_head ON Developers (AccManage,CustomerAcc1, CustomerAcc2, CustomerAcc3, CustomerAcc4, CustomerAcc5, CustomerAcc6, CustomerAcc7, CustomerAcc8, CustomerAcc9, CustomerAcc10, WebMobManage, StockSupplierPayIssues);
 
 
 ------------Let's drop ALL :)------------------------------
