@@ -2,6 +2,8 @@
 
 ## Fixing and updating minor errors
 
+### BY Peggy E Gonzalez Ojeda
+
 _This is a somewhat part of a class that Im trying to do so be pacient and hope everything goes well xD_
 
 **********************************************************************
