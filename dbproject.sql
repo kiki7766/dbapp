@@ -9,7 +9,7 @@
 **********This database has the memory of 1TB, my assumption***************
 ********Is that only 100,000 customers can participate in the db***********
 ***************************************************************************
-***********************By Peggy E Gonzalez Ojeda***************************
+*********************** By Peggy Gonzalez *********************************
 ************************PLEASE PROCEED************************************/
 
 CREATE TABLE Accounts(login VARCHAR(25) PRIMARY KEY, cart INT, Setting VARCHAR(30), Notifications VARCHAR(20));
